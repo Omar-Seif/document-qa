@@ -1,0 +1,9 @@
+[project]
+name = "Project Name"
+version = "1.0.0"
+description = "Project Description"
+readme = "README.md"
+requires-python = "Python Version"
+authors = [
+    { name = "Omar Farahat", email = "omarhseif04@gmail.com" }
+]

@@ -1,0 +1,5 @@
+requests==
+fastapi==
+openai==
+pydantic==
+python-dotenv==
