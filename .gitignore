@@ -9,7 +9,6 @@ __pycache__/
 env/
 venv/
 ENV/
-CLAUDE.md
 
 # Testing
 .pytest_cache/
