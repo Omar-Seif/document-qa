@@ -1,9 +1,16 @@
 [project]
-name = "Project Name"
+name = "document-qa"
 version = "1.0.0"
-description = "Project Description"
+description = "Document Q&A system"
 readme = "README.md"
-requires-python = "Python Version"
+requires-python = ">=3.12"
 authors = [
     { name = "Omar Farahat", email = "omarhseif04@gmail.com" }
+]
+dependencies = [
+    "fastapi>=0.141.1",
+    "openai>=3.3.1",
+    "pydantic>=2.0",
+    "pydantic-settings>=2.15.0",
+    "python-dotenv>=1.2.3",
 ]

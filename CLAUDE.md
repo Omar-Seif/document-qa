@@ -34,6 +34,9 @@ didn't dictate — gets surfaced explicitly, not buried silently in the diff.
 - Structured logging at real decision points (what happened, with enough
   detail to debug from the log alone)
 - No hardcoded values — configuration lives in Pydantic Settings
+- Dependencies are managed with `uv` (pyproject.toml + uv.lock); use
+  `uv add <package>` / `uv remove <package>`, not pip or conda, and run
+  code via `uv run`
 - Pydantic models for all structured data crossing a boundary (API
   request/response, and internal data passed between components)
 - **FastAPI + Pydantic is the default stack** for every project unless the
