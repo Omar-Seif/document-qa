@@ -45,6 +45,32 @@ and design decisions made during planning, before any code exists.
    Conda environment removed manually after uv's environment was verified
    working.
 
+6. **Folder structure finalized for Step 1 (foundation):**
+   ```
+   src/
+   ├── api/
+   ├── config/
+   ├── schemas/
+   │   ├── answer.py
+   │   ├── chunk.py
+   │   └── retrieval.py
+   ├── core/
+   │   ├── ingestion.py
+   │   ├── chunking.py
+   │   ├── embeddings.py
+   │   ├── vectorstore.py
+   │   ├── retrieval.py
+   │   ├── generation.py
+   │   └── pipeline.py
+   └── utils/
+       └── exceptions.py
+   ```
+   `core/*.py` files and `schemas/` contents are placeholders — Steps 4+
+   fill in real code. `core/tools/` and `tests/` from the original
+   template were removed outright (not just emptied): `tools/` doesn't
+   fit RAG's fixed pipeline sequence (see Design Decision 13), and no
+   automated test suite is used at this stage (see Setup, item 2).
+
 ## Design Decisions
 
 1. **Scope: multiple PDFs, not single-PDF-per-session.** The system
