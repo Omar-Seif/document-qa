@@ -191,6 +191,10 @@ and design decisions made during planning, before any code exists.
     despite being cross-cutting rather than a generic utility — confirmed
     deliberately, not by default.
 
+14. Considered validating configured model names against Groq's live
+    `/v1/models` list at startup — deferred; no consumer exists until
+    Step 12 (API/lifespan). Revisit if a deprecated-model issue recurs.
+
 ## Roadmap
 
 | Step | Branch | Content |
